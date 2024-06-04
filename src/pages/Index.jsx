@@ -110,6 +110,7 @@ const Index = () => {
             </Box>
           </SimpleGrid>
         </Box>
+          <SimpleGrid columns={[1, 2, 3]} spacing={10} width="100%">
           {filteredProducts.map(product => (
             <Box key={product.id} borderWidth="1px" borderRadius="lg" overflow="hidden" p={5}>
               <Image src={product.image} alt={product.name} boxSize="200px" objectFit="cover" mx="auto" />
